@@ -1,4 +1,6 @@
 from setuptools import find_packages, setup
+from glob import glob
+import os
 
 package_name = 'no_pigeon'
 
@@ -10,6 +12,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -25,6 +28,8 @@ setup(
     entry_points={
         'console_scripts': [
             'camera_publisher = no_pigeon.camera_publisher:main',
+            'pigeon_detector = no_pigeon.pigeon_detector:main',
+            'sound_player = no_pigeon.sound_player:main',
         ],
     },
 )

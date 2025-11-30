@@ -5,3 +5,4 @@ src/my_package
 src/py_pubsub
 venv/
 **/__pycache__/
+**/*.pt
