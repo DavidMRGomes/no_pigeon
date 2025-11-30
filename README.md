@@ -15,6 +15,8 @@ For self education purposes it is build on top of ROS2.
 
 For visualization purposes I used lichtblick.
 
+An example of a possible noise that can scare pigeons can be seen in https://www.youtube.com/watch?v=f5LPeJGKdS0&t=449s
+
 # Hardware used 
 - Jetson Orin Nano Super (Dev Board)
 - OAK-D S2 (Camera)
